@@ -23,3 +23,16 @@ a:active {
 * {
     box-sizing: border-box;
 }
+
+#inputName {
+    width: 100%;
+}
+
+#inputAge {
+    width: 100%;
+}
+  
+#inputAddress {
+    width: 100%;
+}
+  
