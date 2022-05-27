@@ -10,6 +10,7 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse
 ) {
+  console.log("req.body", req.body);
   const { greeting, nullifierHash, solidityProof } = JSON.parse(req.body);
   const provider = new providers.JsonRpcProvider(process.env.MUMBAI_URL);
 

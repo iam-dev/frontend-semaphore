@@ -35,7 +35,7 @@ export default function Home() {
         //reset()
     }
 
-    async function greet() {
+    async function greet(greeting: any) {
         setLogs("Creating your Semaphore identity...")
 
         const provider = (await detectEthereumProvider()) as any
@@ -65,7 +65,7 @@ export default function Home() {
 
         setLogs("Creating your Semaphore proof...")
 
-        const greeting = "Hello world"
+        //const greeting = "Hello world"
 
         const witness = Semaphore.genWitness(
             identity.getTrapdoor(),
